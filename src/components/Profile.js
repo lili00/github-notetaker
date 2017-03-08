@@ -4,10 +4,14 @@ import Notes from './Notes.js'
 import UserProfile from './UserProfile.js'
 import UserRepos from './UserRepos.js'
 
+import getGithubInfo from '../utils/getGithubInfo.js'
+
 class Profile extends Component {
 	render(){
 		const { username } = this.props.params
-		console.log( username );
+		// console.log( username );
+
+		getGithubInfo ( username )
 		return (
 		 <div className="row">
 		 	<div className="col-sm-4">
