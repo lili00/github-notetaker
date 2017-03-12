@@ -15,7 +15,7 @@ function getGithubInfo( username ) {
 	  			userInfo: arr[0].data,
 	  			userRepos: arr[1].data
 	  		}	
-	  		console.log ( data );
+	  		// console.log ( data );
 	  		return data
 	  	});
 }
